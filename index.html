@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YummyExam</title>
+    <!--****************************css styles-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style-moon.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--******************************** loader -->
+    <div
+      class="loading-screen position-fixed vh-100 w-100 d-flex align-content-center align-items-center justify-content-center"
+    >
+      <span class="loader"></span>
+    </div>
+    <!--****************************Home section-->
+    <section id="Home" class="">
+      <div class="nav_menu min-vh-100 position-fixed d-flex top-0">
+        <div
+          class="nav-tab d-flex bg-black flex-column justify-content-between min-vh-100 p-4"
+        >
+          <div class="links">
+            <ul class="list-unstyled overflow-hidden">
+              <li onclick="searchContent();" class="py-2 position-relative">
+                Search
+              </li>
+              <li
+                onclick="displayCategoriesName();"
+                class="py-2 position-relative"
+              >
+                Categories
+              </li>
+              <li onclick="getArea(); " class="py-2 position-relative">Area</li>
+              <li onclick="getIngredients();" class="py-2 position-relative">
+                Ingredients
+              </li>
+              <li onclick="showContacts();" class="py-2 position-relative">
+                Contact Us
+              </li>
+            </ul>
+          </div>
+          <div class="nav-footer align-items-end justify-content-end">
+            <div class="icons">
+              <i class="icon-facebook"></i>
+              <i class="icon-twitter"></i>
+              <i class="icon-world1"></i>
+            </div>
+            <div class="footer">
+              <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black"
+        >
+          <img class="logo w-100" src="images/logo.png" alt="yummmy logo" />
+          <i class="icon-clear fs-3 icon closeIcon"></i>
+          <i class="icon-bars fs-3 icon openIcon"></i>
+          <div>
+            <i class="icon-world1 fs-4"></i>
+            <i class="icon-share fs-4"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--****************************search section-->
+    <div class="container w-75 searchData"></div>
+    <!--****************************Meals Desplay section-->
+
+    <div class="container">
+      <div class="row py-5 g-4" class="mealsData" id="mealsData"></div>
+    </div>
+    <!--*******************8888888*********Scripts-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
